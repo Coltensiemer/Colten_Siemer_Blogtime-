@@ -1,0 +1,78 @@
+:root {
+    --color-Primary: rgb(126, 224, 129); 
+    --color-secondary: rgb(237, 222, 164); 
+    --color-font: rgb(57, 57, 55); 
+    --color-default: rgb(241, 237, 238); 
+
+
+}
+
+
+
+
+header { 
+   
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--color-Primary); 
+
+}
+
+nav { 
+    
+    position: relative;
+    top:5px; 
+    z-index: 1;
+    position: sticky;
+ 
+}
+
+nav>ul{ 
+
+    display: flex;
+    gap: .5em; 
+    padding: 1em;
+    justify-content: start; 
+    padding: 2em; 
+    color: var(--color-font)
+
+}
+
+nav>ul>li { 
+   list-style: none;
+   cursor: pointer;
+   letter-spacing: .2rem; 
+   
+   padding: 1em; 
+   border-radius: 20px;
+   color: var(--color-default);
+   
+}
+
+nav>ul>li:hover { 
+
+    font-size: 16px;
+    transition-duration: 600ms;
+    color: var(--color-secondary);
+    
+}
+
+
+/* END OF HEADER ------------------------------- */
+
+body { 
+    margin: 0%;
+    z-index: -1;
+    background-color: var(--color-Primary);
+    
+     
+    }
+
+main{ 
+    margin: auto;
+    padding: 15%; 
+    z-index: 999; 
+    background-color: var(--color-default);
+    color: var(--color-font)
+}
+
