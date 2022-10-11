@@ -1,20 +1,10 @@
-/* :root {
-    --color-Primary: rgb(126, 224, 129); 
-    --color-secondary: rgb(237, 222, 164); 
-    --color-font: rgb(57, 57, 55); 
-    --color-default: rgb(241, 237, 238); 
-
-
- 
-
-
-
+@import './variables'; 
 
 header { 
    
     text-align: center;
     font-size: 16px;
-    background-color: var(--color-Primary); 
+    background-color: $primary-color; 
 
 }
 
@@ -60,7 +50,7 @@ nav>ul>li:hover {
 
 /* END OF HEADER ------------------------------- */
 
-/* body { 
+body { 
     margin: 0%;
     z-index: -1;
     background-color: var(--color-Primary);
@@ -75,4 +65,3 @@ main{
     background-color: var(--color-default);
     color: var(--color-font)
 }
- */ */
