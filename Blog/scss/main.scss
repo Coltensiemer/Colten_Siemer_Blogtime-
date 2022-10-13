@@ -5,26 +5,22 @@ header {
     text-align: center;
     font-size: 16px;
     background-color: $primary-color; 
+    height: 20em;
+
+
 
 }
 
-nav { 
-    
-    position: relative;
-    top:5px; 
-    z-index: 1;
-    position: sticky;
- 
-}
+
+
+
 
 nav>ul{ 
 
-    display: flex;
-    gap: .5em; 
-    padding: 1em;
-    justify-content: start; 
+  
     padding: 2em; 
-    color: var(--color-font)
+    position: sticky;
+   
 
 }
 
@@ -32,20 +28,15 @@ nav>ul>li {
    list-style: none;
    cursor: pointer;
    letter-spacing: .2rem; 
-   
    padding: 1em; 
    border-radius: 20px;
-   color: var(--color-default);
-   
+   display: flex;
+   justify-content: center;
+ 
 }
 
-nav>ul>li:hover { 
 
-    font-size: 16px;
-    transition-duration: 600ms;
-    color: var(--color-secondary);
-    
-}
+
 
 
 /* END OF HEADER ------------------------------- */
@@ -64,4 +55,37 @@ main{
     z-index: 999; 
     background-color: var(--color-default);
     color: var(--color-font)
+}
+
+
+// START OF FOOTER -------------------->> 
+
+footer { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%; 
+    height: auto;
+    background-color: rgb(216, 203, 203);
+   
+}
+
+
+
+#Footer-Nav>nav{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em; 
+    list-style: none;
+}
+
+
+#Footer-Social-Media>ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em; 
+    list-style: none;
 }
