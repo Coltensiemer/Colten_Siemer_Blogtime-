@@ -1,27 +1,29 @@
 @import './variables'; 
 
 header { 
-   
+   display: flex;
     text-align: center;
     font-size: 16px;
     background-color: $primary-color; 
     height: 20em;
 
-
-
 }
 
 
-
-
-
 nav>ul{ 
-
-  
+    display: flex;
     padding: 2em; 
     position: sticky;
-   
+}
 
+nav>div>h1 { 
+    font-size: 16px;
+    word-spacing: 1em;
+
+}
+
+nav>div>h1>span { 
+    font-size: 36px;
 }
 
 nav>ul>li { 
@@ -32,15 +34,17 @@ nav>ul>li {
    border-radius: 20px;
    display: flex;
    justify-content: center;
+
+   &:hover { 
+    transform: $scale-size;
+
+   }
  
 }
 
 
-
-
-
 /* END OF HEADER ------------------------------- */
-
+// START OF MAIN-------------------------------->> 
 body { 
     margin: 0%;
     z-index: -1;
@@ -50,11 +54,37 @@ body {
     }
 
 main{ 
-    margin: auto;
+    display: flex;
+    margin: -20px auto;
     padding: 15%; 
     z-index: 999; 
     background-color: var(--color-default);
     color: var(--color-font)
+}
+// END OF MAIN ------------------------>> 
+
+// LIGHT DARK TOGGLE IN MAIN--------------->>
+
+#light-dark-toggle { 
+bottom: 5em; 
+height: 30px;
+width: 50px;
+background-color: whitesmoke;
+   border: 1px black solid;
+   border-radius: 20%;
+    cursor: pointer;
+    fill: black; 
+}
+
+.dark { 
+    background: black;
+    color: white; 
+    
+}
+
+.svg-fill { 
+    fill: $primary-color; 
+    background-color: none;
 }
 
 
@@ -63,19 +93,19 @@ main{
 footer { 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%; 
     height: auto;
-    background-color: rgb(216, 203, 203);
+    background-color: $primary-color;
    
 }
 
 
 
 #Footer-Nav>nav{ 
+    padding-top: 2em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 1em; 
     list-style: none;
@@ -84,8 +114,28 @@ footer {
 
 #Footer-Social-Media>ul{ 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 1em; 
     list-style: none;
+
+   
+}
+
+#Footer-Social-Media>ul>li { 
+    padding: .2em;
+    letter-spacing: .1em;
+    &:hover { 
+        transform: $scale-size; 
+        transition-duration: 400ms;
+        color: aliceblue;
+
+    }
+
+}
+
+
+Footer>section>h1 { 
+    padding-top: 2em;
+    font-size: 12px;
+    letter-spacing: .1em;
 }
